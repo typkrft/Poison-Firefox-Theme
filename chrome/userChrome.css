@@ -1,4 +1,5 @@
 /*
+```
 @@@@@@@    @@@@@@   @@@   @@@@@@    @@@@@@   @@@  @@@
 @@@@@@@@  @@@@@@@@  @@@  @@@@@@@   @@@@@@@@  @@@@ @@@
 @@!  @@@  @@!  @@@  @@!  !@@       @@!  @@@  @@!@!@@@
@@ -10,65 +11,77 @@
  ::       ::::: ::   ::  :::: ::   ::::: ::   ::   ::
  :         : :  :   :    :: : :     : :  :   ::    :
 
+A Firefox theme with Pywal and macOS in mind.
 Firefox Vibrancy, Transparency, for macOS
 ver. 0.1
 By: Brandon Shockley
-Original Source: "https://github.com/manilarome/blurredfox/"
+Original Source Material: "https://github.com/manilarome/blurredfox/"
+```
+![Poison](https://i.imgur.com/0Amq1Y9.png)
+![Additional Screenshots](https://imgur.com/a/Sh0vzDS)
 
-Why? 
-Unfortunately becuase of design capability differences between Firefox for Linux and macOS, 
-Manilarome's beautiful theme doesn't render properly on macOS. This edit of their theme tries 
-to find work arounds for what doesn't work, as well as tweak some settings to my liking. This 
-theme is intended to be used with Pywalfox (https://github.com/Frewacom/pywalfox). I am also 
-not a professional CSS developer. My theme might be crude, and there are likely to be 
-overlapping rules and bugs. Please feel free to propose fixes and raise issues on Github. 
+# Why?
+Unfortunately, becuase of design capability differences between Firefox for Linux and macOS,
+Manilarome's beautiful theme, ![blurredfox](https://github.com/manilarome/blurredfox) doesn't render properly on macOS. This edit of their theme tries
+to find work arounds for what doesn't work, as well as tweak some settings to my liking. This
+theme is intended to be used with, ![pywal](https://github.com/dylanaraps/pywal) and ![pywalfox](https://github.com/Frewacom/pywalfox). I am also
+not a professional CSS developer. My theme might be crude, and there are likely to be
+overlapping rules and bugs. Please feel free to propose fixes and raise issues on Github.
 
-TODO:
-[ ] Integrate this better into Pywalfox
-    [ ] Context menu highlighting
-    [ ] Text highlighting 
-    [ ] Context Menu Background
-    [ ] Check if there are variables set I can use or link wals cached .css file. Restarts
-            would be required if simply linking cached css. 
-        [ ] If Linking to .css from .cache/wal create a template to add alphachannels
-[ ] Clean up rules and make them more concise. 
-[ ] Find a better solution to show and hide the macOS Titlebar buttons [ (x) (-) (+) ]
-[ ] Change Right Click Menu Seperators and Right Click Hover Color
-[ ] Keep Menu Selected When Hovering over the Titlebar Buttons [ (x) (-) (+) ]
-[ ] Keep URL Bar open when scrolling through overflow dropdowns
-[ ] Make sure URL Bar and Tab Bar are the same height
-[ ] Add pywal variable to --chrome-content-separator-color. 
-[ ] Integrate Pywal Colors into Find Bar
-[ ] Find Bar Seach Box Should be White
-[ ] Side Bar Vibrancy
-    [ ] Side bar header drop down
-[ ] Dropdowns, right click, and context menus should match
-[ ] Do the Customize Window 
-[ ] Look at pywalfox's userChrome.css to see if there's anything I can integrate
-[ ] Implement Other layout conifurations eg: Auto Hide Side Bar w/ Tabbar and OG
-        auto hide url bar with tab bar on the bottom. 
-[ ] Theme the Dropdown under the back and probably forward buttons
-[ ] Add wallpaper or pywall'd picture / logos to interface
-[ ] Look into icon replacements
+# Features
 
-Bugs:
-* Find Bar Near the search box appears to flash in sync with the cursor after typing try to 
+# Dependencies
+
+# Installation
+
+# TODO:
+- [ ] Integrate this better into Pywalfox
+   -  [ ] Context menu highlighting
+   -  [ ] Text highlighting
+   -  [ ] Context Menu Background
+   -  [ ] Check if there are variables set I can use or link wals cached .css file. Restarts
+            would be required if simply linking cached css.
+        - [ ] If Linking to .css from .cache/wal create a template to add alphachannels
+-  [ ] Clean up rules and make them more concise.
+-  [ ] Find a better solution to show and hide the macOS Titlebar buttons [ (x) (-) (+) ]
+-  [ ] Change Right Click Menu Seperators and Right Click Hover Color
+-  [ ] Keep Menu Selected When Hovering over the Titlebar Buttons [ (x) (-) (+) ]
+-  [ ] Keep URL Bar open when scrolling through overflow dropdowns
+-  [ ] Make sure URL Bar and Tab Bar are the same height
+-  [ ] Add pywal variable to --chrome-content-separator-color.
+-  [ ] Integrate Pywal Colors into Find Bar
+-  [ ] Find Bar Seach Box Should be White
+-  [ ] Side Bar Vibrancy
+    -  [ ] Side bar header drop down
+-  [ ] Dropdowns, right click, and context menus should match
+-  [ ] Do the Customize Window
+-  [ ] Look at pywalfox's userChrome.css to see if there's anything I can integrate
+-  [ ] Implement Other layout conifurations eg: Auto Hide Side Bar w/ Tabbar and OG
+        auto hide url bar with tab bar on the bottom.
+-  [ ] Theme the Dropdown under the back and probably forward buttons
+-  [ ] Add wallpaper or pywall'd picture / logos to interface
+-  [ ] Look into icon replacements
+-  [ ] Can I import sass files eg: userChrome.scss
+-  [ ] Try to add blur to elements that are just transparent. Maybe a blurred picture as the background?
+-  [ ] Change the height of the URL Bar to match the icons in the bar
+-  [ ] Center the URL Bar buttons between the Url input and the edge
+
+# Bugs:
+* Find Bar Near the search box appears to flash in sync with the cursor after typing try to
 replcate.
-    - Mostly Fixed by setting .findbar-closebutton to vibrancy. Still occurs once everytime 
+    - Mostly Fixed by setting .findbar-closebutton to vibrancy. Still occurs once everytime
     you click the search box. Bug is also caused by other behavior
 
 * Opening Findbar while side panel is open messes up the lower half of the background of the
-sidepanel.  
-    - set the findbar opacity to .9 appears to resolve this for the most part, findbar flashes
+sidepanel.
+    - Set the findbar opacity to .9 appears to resolve this for the most part, findbar flashes
     when exiting
 
-* colors.css is not completely matching pywalfox pallet. They might be off, but pywalfox has 
+* colors.css is not completely matching pywalfox pallet. They might be off, but pywalfox has
 more colors. 19 vs 15. Some colors in colors.css appear to be dupes. Check colors.css.
 
-* Can I import sass files eg: userChrome.scss 
-
 * If you move your cursor above the header text in the side panel the tabs bar drops down. It
-would be nice if that didnt happen. 
+would be nice if that didnt happen.
 
 */
 
@@ -112,8 +125,8 @@ findbar {
 }
 
 /* Various Opacities */
-#appMenu-popup, 
-#customizationui-widget-panel, 
+#appMenu-popup,
+#customizationui-widget-panel,
 #pageActionPanel,
 #editBookmarkPanel,
 #protections-popup,
@@ -176,10 +189,10 @@ menupopup:not(#BMB_bookmarksPopup),
 /* Right Click Menu */
 
 /*  Sets Background Color, Text Color, and Opacity  */
-#mainPopupSet menupopup { 
-    color: var(--background); /* Text Color */ 
+#mainPopupSet menupopup {
+    color: var(--background); /* Text Color */
     background-color: var(--color2) !important; /*This is the right click menu color*/
-    opacity: .9; 
+    opacity: .9;
 }
 
 /*
@@ -190,7 +203,7 @@ menupopup:not(#BMB_bookmarksPopup),
  :   : :  :.:: :     :     : :. :   :   : : :   :: :  :  : :: :::
 */
 
-/* 
+/*
 Various Configs
 Note: only have On Configuration Uncommented
 
@@ -198,8 +211,8 @@ Configuration 1
 - Tab Bar at the Top
 - URL Bar Drops Down on hover near top or Focus
 
-Configuration 2 
-- Url Bar at the top 
+Configuration 2
+- Url Bar at the top
 - Tab Bar drops down on hover or focus
 */
 
@@ -207,7 +220,7 @@ Configuration 2
 /* Hide Navigation Bar */
 #nav-bar {
 	height: 1px;
-	margin-bottom: -1.5rem; 
+	margin-bottom: -1.5rem;
 	opacity: 0;
     overflow: hidden;
 }
@@ -216,7 +229,7 @@ Configuration 2
 toolbox:hover #nav-bar,
 toolbox:focus-within #nav-bar {
     padding-top: .5rem;
-    height: auto; 
+    height: auto;
     margin-bottom: 0rem;
     opacity: 1;
     overflow: visible;
@@ -230,15 +243,15 @@ toolbox:focus-within #nav-bar {
 /* Configuration 2 - End */
 
 
-/* Other Options Useful in this Configuration Uncomment 
+/* Other Options Useful in this Configuration Uncomment
 to enable / change */
 
-/* A thin bar that seperate the URL Bar from the page. 
-If the URL bar is hidden it will still display. 
-It runs through the sidebar when it is open. 
+/* A thin bar that seperate the URL Bar from the page.
+If the URL bar is hidden it will still display.
+It runs through the sidebar when it is open.
 Defualt is none */
 #main-window {
---chrome-content-separator-color: none; 
+--chrome-content-separator-color: none !important;
 }
 
 /* Hides the Title Bar [ (x) (-) (+) ] buttons */
@@ -255,7 +268,7 @@ Defualt is none */
     display: none !important;
 }
 
-/* 
+/*
 @@@@@@@@@@  @@@  @@@@@@  @@@@@@@
 @@! @@! @@! @@! !@@     !@@
 @!! !!@ @!@ !!@  !@@!!  !@!
@@ -263,7 +276,7 @@ Defualt is none */
  :      :   :   ::.: :   :: :: :
 */
 
-/* Changes the space aboe the tab bars useful if you havewindow boards 
+/* Changes the space aboe the tab bars useful if you havewindow boards
 and stil want to see the selected tab highlight color */
 :root[extradragspace][tabsintitlebar]:not([inFullscreen]) {
     --space-above-tabbar: 2px !important;
@@ -283,7 +296,7 @@ menupopup[hasbeenopened="true"] {
     color: black !important;
 }
 
-/* 
+/*
 @@@  @@@  @@@@@@  @@@@@@@      @@@  @@@  @@@@@@ @@@@@@@@ @@@@@@@
 @@!@!@@@ @@!  @@@   @@!        @@!  @@@ !@@     @@!      @@!  @@@
 @!@@!!@! @!@  !@!   @!!        @!@  !@!  !@@!!  @!!!:!   @!@  !@!
