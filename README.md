@@ -16,7 +16,8 @@ ver. 0.1
 By: Brandon Shockley
 Original Source Material: "https://github.com/manilarome/blurredfox/"
 ```
-# Screenshots
+![Poison](https://i.imgur.com/0Amq1Y9.png)
+![Additional Screenshots](https://imgur.com/a/Sh0vzDS)
 
 # Why? 
   Unfortunately becuase of design capability differences between Firefox for Linux and macOS, 
@@ -25,6 +26,8 @@ to find work arounds for what doesn't work, as well as tweak some settings to my
 theme is intended to be used with Pywalfox (https://github.com/Frewacom/pywalfox). I am also 
 not a professional CSS developer. My theme might be crude, and there are likely to be 
 overlapping rules and bugs. Please feel free to propose fixes and raise issues on Github. 
+
+# Features
 
 # Dependencies
 
