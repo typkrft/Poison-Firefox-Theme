@@ -61,6 +61,7 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 -  [ ] Add wallpaper or pywall'd picture / logos to interface
 -  [ ] Look into icon replacements
 -  [ ] Can I import sass files eg: userChrome.scss 
+-  [ ] Try to add blur to elements that are just transparent. Maybe a blurred picture as the background? 
 
 # Bugs:
 * Find Bar Near the search box appears to flash in sync with the cursor after typing try to 
