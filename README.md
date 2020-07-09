@@ -62,6 +62,8 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 -  [ ] Look into icon replacements
 -  [ ] Can I import sass files eg: userChrome.scss 
 -  [ ] Try to add blur to elements that are just transparent. Maybe a blurred picture as the background? 
+-  [ ] Change the height of the URL Bar to match the icons in the bar
+-  [ ] Center the URL Bar buttons between the Url input and the edge
 
 # Bugs:
 * Find Bar Near the search box appears to flash in sync with the cursor after typing try to 
