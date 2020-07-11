@@ -61,7 +61,7 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
  - Your profile folder should be located at `/Users/<userName>/Library/Application\ Support/Firefox/Profiles/xxxxxxx.default-release/chrome/`.
 - Restart Firefox.
   
-# NOTES: 
+# Notes: 
   - The Dependencies are optional, but if you dont use them be sure to edit the color variables and remove the pywal import line.
   - The way it is setup now the userChrome.css sources a cached pywal this means when ever you update pywal you must also restart Firefox. Pywalfox colors will update without restarting however. 
   - This could be modified for Linux. I might effectively the only thing that probably would change are the `-moz-mac-vibrancy-dark` sections. Blur would likely be set through your compisitor and not userChrome.css
@@ -74,7 +74,7 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
    -  [ ] Context Menu Background
    -  [ ] Check if there are variables set I can use or link wals cached .css file. Restarts
             would be required if simply linking cached css. 
-        - [ ] If Linking to .css from .cache/wal create a template to add alphachannels
+        - [ ] If linking to .css from .cache/wal create a template to add alpha channels
 -  [ ] Clean up rules and make them more concise. 
 -  [ ] Find a better solution to show and hide the macOS Titlebar buttons [ (x) (-) (+) ]
 -  [ ] Change Right Click Menu Seperators and Right Click Hover Color
@@ -82,13 +82,13 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 -  [ ] Keep URL Bar open when scrolling through overflow dropdowns
 -  [ ] Make sure URL Bar and Tab Bar are the same height
 -  [ ] Add pywal variable to --chrome-content-separator-color.
-    -  [X] Create Config Options to Show and hide. 
--  [ ] Integrate Pywal Colors into Find Bar
--  [X] Find Bar Seach Box Should be White
--  [X] Side Bar Vibrancy
-    - [X] Side bar header drop down
+    -  [X] <del>Create Config Options to Show and hide.</del>
+-  [ ] Integrate Pywal Colors into Find Bar</del>
+-  [X] <del>Find Bar Seach Box Should be White
+-  [X] <del>Side Bar Vibrancy</del>
+    - [X] <del>Side bar header drop down</del>
 -  [ ] Dropdowns, right click, and context menus should match
--  [X] Do the Customize Window 
+-  [X] <del>Do the Customize Window</del>
 -  [ ] Look at pywalfox's userChrome.css to see if there's anything I can integrate
 -  [ ] Implement Other layout conifurations eg: Auto Hide Side Bar w/ Tabbar and OG
         auto hide url bar with tab bar on the bottom. 
@@ -98,9 +98,9 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 -  [ ] Can I import sass files eg: userChrome.scss 
 -  [ ] Try to add blur to elements that are just transparent. Maybe a blurred picture as the background? 
 -  [ ] Change the height of the URL Bar to match the icons in the bar
--  [X] Center the URL Bar buttons between the Url input and the edge
+-  [X] <del>Center the URL Bar buttons between the Url input and the edge</del>
 -  [ ] URL Bar always focused on New Tab 
--  [X] Hide Tabs if only one tab
+-  [X] <del>Hide Tabs if only one tab</del>
 
 # Bugs:
 * Find Bar Near the search box appears to flash in sync with the cursor after typing try to 
