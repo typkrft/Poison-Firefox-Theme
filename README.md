@@ -12,7 +12,7 @@
 
 A Firefox theme with Pywal and macOS in mind. 
 Firefox Vibrancy, Transparency, for macOS
-ver. 0.1
+ver. 0.2
 By: Brandon Shockley
 Original Source Material: "https://github.com/manilarome/blurredfox/"
 ```
@@ -28,10 +28,44 @@ not a professional CSS developer. My theme might be crude, and there are likely 
 overlapping rules and bugs. Please feel free to propose fixes and raise issues on Github. 
 
 # Features
+- Autohide Single Tab Windows
+- Autohide URL Bar
+- Native macOS Vibrancy (Blur & Transparency) Effects for
+ - The Side Panel
+ - The URL Bar
+ - The Tab Bar
+ - The Bookmarks Bar
+ - The Find Bar
+ - The Customization Page
+- Clearly Commented So you can turn Features On and Off
+- Pywal & Pywalfox theming for 
+ - Dropdown Menus 
+ - Right click Menus
+ - Tabs
+ - Etc.
 
-# Dependencies
+# Dependencies (Optional - See Notes)
+- ![Pywal](https://github.com/dylanaraps/pywal)
+- ![Pywalfox](https://github.com/Frewacom/pywalfox)
 
 # Installation
+- Install ![Pywal](https://github.com/dylanaraps/pywal/wiki/Installation)
+ - Note: I would recommend Installing it from source if you plan on using it on its own. The last time I checked there was an issue that cuased the wallpaper to disappear when trying to set it in macOS. 
+- Install ![PywalFox](https://github.com/dylanaraps/pywal/wiki/Installation)
+ - Note: There are two parts to PywalFox - 1) Firefox Extension 2) A local python daemon. Both are required for Pywalfox to function properly. In addition you may run into an issue connecting the daemon to the Firefox extension please check ![this thread for possible solutions](https://github.com/Frewacom/pywalfox/issues/34).
+- Run pywal to generate a cached theme.
+- Download the userChrome.css file from this repository. 
+- Edit the `@import url` line to reflect your pywal cache file. This should be found `/Users/<userName>/.cache/wal/colors.css`.
+- Look through the config and edit the options to your liking. 
+- Once Installed simply add the userChrome.css file in the chrome folder in your Firefox profile folder. 
+ - Your profile folder should be located at `/Users/<userName>/Library/Application\ Support/Firefox/Profiles/xxxxxxx.default-release/chrome/`.
+- Restart Firefox.
+  
+ - NOTES: 
+  - The Dependencies are optional, but if you dont use them be sure to edit the color variables and remove the pywal import line.
+  - The way it is setup now the userChrome.css sources a cached pywal this means when ever you update pywal you must also restart Firefox. Pywalfox colors will update without restarting however. 
+  - This could be modified for Linux. I might effectively the only thing that probably would change are the `-moz-mac-vibrancy-dark` sections. Blur would likely be set through your compisitor and not userChrome.css
+  - The User should configure spacing in the URL bar between elements using the Customization page instead of tyring to set it in the userChrome.css, probably.
 
 # TODO:
 - [ ] Integrate this better into Pywalfox
@@ -47,13 +81,14 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 -  [ ] Keep Menu Selected When Hovering over the Titlebar Buttons [ (x) (-) (+) ]
 -  [ ] Keep URL Bar open when scrolling through overflow dropdowns
 -  [ ] Make sure URL Bar and Tab Bar are the same height
--  [ ] Add pywal variable to --chrome-content-separator-color. 
+-  [ ] Add pywal variable to --chrome-content-separator-color.
+    -  [X] Create Config Options to Show and hide. 
 -  [ ] Integrate Pywal Colors into Find Bar
--  [ ] Find Bar Seach Box Should be White
--  [ ] Side Bar Vibrancy
-    -  [ ] Side bar header drop down
+-  [X] Find Bar Seach Box Should be White
+-  [X] Side Bar Vibrancy
+    - [X] Side bar header drop down
 -  [ ] Dropdowns, right click, and context menus should match
--  [ ] Do the Customize Window 
+-  [X] Do the Customize Window 
 -  [ ] Look at pywalfox's userChrome.css to see if there's anything I can integrate
 -  [ ] Implement Other layout conifurations eg: Auto Hide Side Bar w/ Tabbar and OG
         auto hide url bar with tab bar on the bottom. 
@@ -63,7 +98,9 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 -  [ ] Can I import sass files eg: userChrome.scss 
 -  [ ] Try to add blur to elements that are just transparent. Maybe a blurred picture as the background? 
 -  [ ] Change the height of the URL Bar to match the icons in the bar
--  [ ] Center the URL Bar buttons between the Url input and the edge
+-  [X] Center the URL Bar buttons between the Url input and the edge
+-  [ ] URL Bar always focused on New Tab 
+-  [X] Hide Tabs if only one tab
 
 # Bugs:
 * Find Bar Near the search box appears to flash in sync with the cursor after typing try to 
