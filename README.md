@@ -61,7 +61,7 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
  - Your profile folder should be located at `/Users/<userName>/Library/Application\ Support/Firefox/Profiles/xxxxxxx.default-release/chrome/`.
 - Restart Firefox.
   
- - NOTES: 
+# NOTES: 
   - The Dependencies are optional, but if you dont use them be sure to edit the color variables and remove the pywal import line.
   - The way it is setup now the userChrome.css sources a cached pywal this means when ever you update pywal you must also restart Firefox. Pywalfox colors will update without restarting however. 
   - This could be modified for Linux. I might effectively the only thing that probably would change are the `-moz-mac-vibrancy-dark` sections. Blur would likely be set through your compisitor and not userChrome.css
