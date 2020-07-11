@@ -50,17 +50,17 @@ overlapping rules and bugs. Please feel free to propose fixes and raise issues o
 
 # Installation
 - Install ![Pywal](https://github.com/dylanaraps/pywal/wiki/Installation)
- - Note: I would recommend Installing it from source if you plan on using it on its own. The last time I checked there was an issue that cuased the wallpaper to disappear when trying to set it in macOS. 
+  - Note: I would recommend Installing it from source if you plan on using it on its own. The last time I checked there was an issue that cuased the wallpaper to disappear when trying to set it in macOS. 
 - Install ![PywalFox](https://github.com/Frewacom/pywalfox)
- - Note: There are two parts to PywalFox - 1) Firefox Extension 2) A local python daemon. Both are required for Pywalfox to function properly. In addition you may run into an issue connecting the daemon to the Firefox extension please check ![this thread for possible solutions](https://github.com/Frewacom/pywalfox/issues/34).
+  - Note: There are two parts to PywalFox - 1) Firefox Extension 2) A local python daemon. Both are required for Pywalfox to function properly. In addition you may run into an issue connecting the daemon to the Firefox extension please check ![this thread for possible solutions](https://github.com/Frewacom/pywalfox/issues/34).
 - Run pywal to generate a cached theme.
 - Enable custom css in Firefox. More on this ![https://www.reddit.com/r/FirefoxCSS/comments/brmi8v/psa_firefox_v69_users_will_have_to_set_a_pref_to/](here_.
- - Note: There may be some additional preferences you need to change. I don't recall if it's neccessary on macOS. If you run into issues please let me know. 
+  - Note: There may be some additional preferences you need to change. I don't recall if it's neccessary on macOS. If you run into issues please let me know. 
 - Download the userChrome.css file from this repository. 
 - Edit the `@import url` line to reflect your pywal cache file. This should be found `/Users/<userName>/.cache/wal/colors.css`.
 - Look through the config and edit the options to your liking. 
 - Once Installed simply add the userChrome.css file in the chrome folder in your Firefox profile folder. 
- - Your profile folder should be located at `/Users/<userName>/Library/Application\ Support/Firefox/Profiles/xxxxxxx.default-release/chrome/`.
+  - Note: Your profile folder should be located at `/Users/<userName>/Library/Application\ Support/Firefox/Profiles/xxxxxxx.default-release/chrome/`.
 - Restart Firefox.
   
 # Notes: 
